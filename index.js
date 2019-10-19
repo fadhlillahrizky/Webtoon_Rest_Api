@@ -32,11 +32,11 @@ app.group("/api/v1", (router) => {
         
         //episode API
         reader.get('/webtoon/:webtoon_id/episodes', episodeController.index)    
-        reader.get('/webtoon/:webtoon_id/episode/:id', episodeController.show)    
+        reader.get('/webtoon/:webtoon_id/episode/:image_id', episodeController.show)    
         
         //image API
         reader.get('/webtoon/:webtoon_id/episode/:episode_id/images', imageController.index)    
-        reader.get('/webtoon/:webtoon_id/episode/:episode_id/image/:id', imageController.show)    
+        reader.get('/webtoon/:webtoon_id/episode/:episode_id/image/:image_id', imageController.show)    
         
         //another APIs goes here
     })
