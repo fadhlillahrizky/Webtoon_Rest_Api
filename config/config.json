@@ -3,7 +3,7 @@
     "username": "root",
     "password": null,
     "database": "webtoon",
-    "host": "localhost",
+    "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
   },
@@ -16,11 +16,11 @@
     "operatorsAliases": false
   },
   "production": {
-    "use_env_veriable": "https://positive-toon-rest-api.herokuapp.com",
-    "dialect": "postgres",
-    "protocol": "postgres",
-    "dialectOptions": {
-      "ssl": true
-    }
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
   }
 }

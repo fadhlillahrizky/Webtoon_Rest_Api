@@ -32,11 +32,11 @@ app.group("/api/v1", (router) => {
         
         //episode API
         reader.get('/webtoon/:webtoon_id/episodes', episodeController.index)    
-        reader.get('/webtoon/:webtoon_id/episode/:episode_id', episodeController.show)    
+        reader.get('/webtoon/:webtoon_id/episode/:id', episodeController.show)    
         
         //image API
         reader.get('/webtoon/:webtoon_id/episode/:episode_id/images', imageController.index)    
-        reader.get('/webtoon/:webtoon_id/episode/:episode_id/image/:image_id', imageController.show)    
+        reader.get('/webtoon/:webtoon_id/episode/:episode_id/image/:id', imageController.show)    
         
         //another APIs goes here
     })
@@ -72,4 +72,4 @@ app.group("/api/v1", (router) => {
 })
 
 
-app.listen(process.env.PORT || 3306, function(){ console.log(`Listening on port ${port}!`)})
+app.listen(port, () => console.log(`Listening on port ${port}!`))

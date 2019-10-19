@@ -21,7 +21,7 @@ exports.show = (req, res) => {
         where:{ 
             webtoonId: req.params.webtoon_id,
             episodeId: req.params.episode_id,
-            id: req.params.image_id
+            id: req.params.episode_id
         },
             include: [{ 
                 model: Episode,
@@ -59,7 +59,7 @@ exports.update = (req, res) => {
         {where:{ 
             webtoonId: req.params.webtoon_id,
             episodeId: req.params.episode_id,
-            id: req.params.image_id
+            id: req.params.episode_id
         },
             include: [{ 
                 model: Episode,
