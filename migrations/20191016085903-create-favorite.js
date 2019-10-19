@@ -29,14 +29,9 @@ module.exports = {
         onDelete: 'cascade'
       },
       createdAt: {
-        allowNull: false,
-        type: 'TIMESTAMP',
-        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP')
+        allowNull: false
       },
       updatedAt: {
-        allowNull: false,
-        type: 'TIMESTAMP',
-        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'),
         allowNull: false
       }
     });
