@@ -16,7 +16,7 @@
     "operatorsAliases": false
   },
   "production": {
-    "use_env_veriable": "https://positive-toon-rest-api.herokuapp.com",
+    "use_env_veriable": "DATABASE_URL",
     "dialect": "postgres",
     "protocol": "postgres",
     "dialectOptions": {
