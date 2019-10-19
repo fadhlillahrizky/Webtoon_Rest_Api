@@ -36,7 +36,7 @@ exports.register = (req, res)=>{
                 res.send({
                     message: "success",
                     data: {
-                        id: result.dataValues.id.toString(),
+                        id: result.dataValues.id,
                         name: result.dataValues.name,
                         email: result.dataValues.email,
                         token: token
